@@ -1,26 +1,16 @@
-# AtCoder beginner's selection abc081a
-'''
-s = input()
-token = s.split()
-numbers = list(map(int,token))
-'''
-size = int(input())
-numbers = list (map(int,input().split()))
-num_div = 0
-all_even = True
+a=input()
+n=0
+for i in a:
+    if i=='1':
+        n+=1
+print(n)
 
-while all_even:
-    for i in range (size):
-        if numbers[i]%2 == 1:
-            all_even = False
-            break
-        else:
-           numbers [i] //=2
-    if all_even:
-        num_div += 1
+#print(s.count('1'))
 
-print(num_div)
-
-
-
-
+# num=int(input())
+# n=0
+# while num > 0:
+#     if num%10 == 1:
+#         n+=1
+#     num //=10
+# print(n)
